@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+}
+
+body {
+    font-family: Courier;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#titulo::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink .7s infinite;
+  }
+  
+  @keyframes blink {
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;  }
+  
+  }
+  header {    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+  }
+
+
+  a {
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .logo{
+    padding: 10px;
+  }
+
