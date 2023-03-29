@@ -9,13 +9,15 @@
 }
 
 body {
+    font-family: Courier;
+}
+
+main{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: Courier;
 }
-
 #titulo::after {
     content: "|";
     margin-left: 5px;
@@ -33,3 +35,28 @@ body {
       opacity: 1;  }
   
   }
+  header {    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+  }
+
+
+  a {
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .logo{
+    padding: 10px;
+  }
+
